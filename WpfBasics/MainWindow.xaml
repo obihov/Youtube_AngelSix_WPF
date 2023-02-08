@@ -48,6 +48,10 @@
             <TextBlock Text="Part Number" />
             <TextBox Padding="2" IsReadOnly="True" Background="#eee"/>
             
+            
+            <!--Raw Material-->
+            <TextBlock Text="Raw Material" FontWeight="Bold" Margin="0 10 0 0"/>
+            <ComboBox />
         </StackPanel>
     </Border>
 </Window>
