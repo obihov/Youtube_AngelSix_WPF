@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfBasics"
         mc:Ignorable="d"
         Title="WPF Basics" Height="800" Width="400">
-    <Border Padding="10">
+    <Border Padding="10" Background="#FFE3E3E3">
         <StackPanel>
             
             <!--Button-->
