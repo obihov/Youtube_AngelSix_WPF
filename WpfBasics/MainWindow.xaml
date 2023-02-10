@@ -84,13 +84,13 @@
             </Grid>
             <!--Length-->
             <TextBlock Text="Length" />
-            <TextBox Padding="2"/>
+            <TextBox x:Name="LengthTextbox" Padding="2"/>
             <!--Mass-->
             <TextBlock Text="Mass" />
             <TextBox Padding="2" IsReadOnly="True" Background="#eee"/>
             <!--Finish-->
             <TextBlock Text="Finish" />
-            <ComboBox>
+            <ComboBox x:Name="paintedCombobox" SelectionChanged="paintedCombobox_SelectionChanged">
                 <ComboBoxItem IsSelected="True">Painted</ComboBoxItem>
                 <ComboBoxItem Content="Not Painted" />
             </ComboBox>

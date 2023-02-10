@@ -35,7 +35,28 @@ namespace WpfBasics
 
         private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
-            
+            var resetButtonControl = ((Button)sender); //can do this.ResetButton as well.            
+            TextBox lengthTextboxControl = this.LengthTextbox;
+
+            if (resetButtonControl != null)
+            {
+                lengthTextboxControl.Text = string.Empty;
+            }
+        }
+
+        private void RefreshButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void paintedCombobox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBox paintedComboboxControl = sender as ComboBox;
+            TextBox lengthTextboxControl = this.LengthTextbox;
+
+            //get selected combobox item when combobox changes
+            var selectedPaint = paintedCombobox.SelectedValue as ComboBoxItem;
+            lengthTextboxControl.Text = selectedPaint?.Content?.ToString();
         }
     }
 }
