@@ -22,7 +22,20 @@ namespace WpfBasics
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();           
+        }
+
+        static Brush OldBackgroundColor;
+
+        private void ApplyButton_Click(object sender, RoutedEventArgs e)
+        {
+            
+
+        }
+
+        private void ResetButton_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
